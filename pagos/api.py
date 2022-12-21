@@ -10,7 +10,6 @@ from rest_framework.response import Response
 class PagoViewSet(viewsets.ModelViewSet):
     queryset = Pagos.objects.get_queryset().order_by('id')
     serializer_class = PagoSerializer
-    pagination_class = StandarResultsSetPagination
     filter_backends =[filters.SearchFilter]
     # permission_classes =[permissions.IsAuthenticated]
     search_fields  = ['fecha_pago','servicio']
@@ -19,21 +18,23 @@ class PagoViewSet(viewsets.ModelViewSet):
 class PaymentUserViewSet(viewsets.ModelViewSet):
     queryset = PaymentUser.objects.get_queryset().order_by('id')
     serializer_class = PaymentUserSerializer
-    pagination_class = StandarResultsSetPagination
     # permission_classes =[permissions.IsAuthenticated]
     filter_backends =[filters.SearchFilter]
     search_fields  = ['paymentDate','expirationDate']
+    throttle_scope = 'payment'
+
 
 class ExpiredPaymentsViewSet(viewsets.ModelViewSet):
     queryset = ExpiredPayments.objects.get_queryset().order_by('id')
     serializer_class = ExpiredPaymentsSerializer
-    pagination_class = StandarResultsSetPagination
     http_method_names = ['get','post']
     # permission_classes =[permissions.IsAuthenticated]
+    throttle_scope = 'expired'
+
 
 class ServicesViewSet(viewsets.ModelViewSet):
     queryset = Services.objects.get_queryset().order_by('id')
     serializer_class = ServicesSerializer
-    pagination_class = StandarResultsSetPagination
     http_method_names = ['get']
     # permission_classes =[permissions.IsAuthenticated]
+    throttle_scope = 'services'

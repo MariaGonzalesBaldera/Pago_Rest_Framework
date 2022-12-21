@@ -134,7 +134,11 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.ScopedRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'pagos': '1000/day'
+        'pagos': '1000/day',
+        'payment': '2000/day',
+        'expired': '2000/day',
+        'services': '2000/day',
+
     },
 }
 CACHES = {

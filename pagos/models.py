@@ -36,6 +36,11 @@ class PaymentUser(models.Model):
     usuario = models.ForeignKey(User, on_delete=models.CASCADE,related_name='users')
     services_id = models.ForeignKey(Services, on_delete=models.CASCADE,related_name='services')
 
+    #validacion de fecha
+    def validate_fecha(self,value):
+        if self.expirationDate.month<self.paymentDate.month:            
+            ExpiredPayments.objects.create()
+
 class ExpiredPayments(models.Model):
     penalty_fee_amount = models.FloatField(default=0.0)
     payment_user_id = models.ForeignKey(PaymentUser, on_delete=models.CASCADE,related_name='payment_user')
