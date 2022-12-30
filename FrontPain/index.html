@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Principal</title>
+
+    <style>
+        
+      </style>
+  
+      
+</head>
+<body>
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
+            <li><a href="agregarPago.html" class="nav-link px-2 link-dark">Añadir nuevo pago</a></li>
+          </ul>
+          <div class="dropdown text-end">
+            
+            <ul class="nav col-12 col-lg-0 me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><p href="#" class="nav-link px-2 link-dark"><a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                  </a></p></li>
+                  <li><p href="#" class="nav-link px-2 link-dark">Nombre del usuario</p></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Salir</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <div class="b-example-divider"> </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Pagos Realizados</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            </div>
+            <div class="col-12 col-lg-0 ">
+              <table class="table" style="width: 320%;">
+                <thead >
+                  <tr>
+                    <th scope="col">Logo</th>
+                    <th scope="col">Servicio</th>
+                    <th scope="col">Fecha de Pago</th>
+                    <th scope="col">Monto</th>
+                  </tr>
+                </thead>
+                <tbody class="row1">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="pb-2 border-bottom">Pagos Vencidos</h2>
+        <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start ">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            </div>
+            <div class="container ">
+              <table class="table" style="width: 320%;">
+                <thead>
+                  <tr>
+                    <th scope="col">Logo</th>
+                    <th scope="col">Servicio</th>
+                    <th scope="col">Fecha de Pago</th>
+                    <th scope="col">Monto</th>
+                    <th scope="col">Penalidad</th>
+                  </tr>
+                </thead>
+                <tbody class="row2">
+                  
+                </tbody>
+              </table>              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+       <script src="./static/js/index.js"></script>
+</body>
+</html>

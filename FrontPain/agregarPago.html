@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/agregarPago.css">
+
+  <title>Agregar Pago</title>
+</head>
+
+<body>
+  <div class="b-example-divider"></div>
+
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
+          <li><a href="agregarPago.html" class="nav-link px-2 link-dark">Añadir nuevo pago</a></li>
+        </ul>
+        <div class="dropdown text-end">
+
+          <ul class="nav col-12 col-lg-0 me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <p href="#" class="nav-link px-2 link-dark"><a href="#" class="d-block link-dark text-decoration-none"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a></p>
+            </li>
+            <li>
+              <p href="#" class="nav-link px-2 link-dark">Nombre del usuario</p>
+            </li>
+            <li><a href="#" class="nav-link px-2 link-dark">Salir</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="b-example-divider"> </div>
+
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto">
+      <form action="">
+        <img class="mb-4" src="static/images/logo_agregar.PNG" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 fw-normal">Agregar un Nuevo Pago</h1>
+        <div class="form-floating">
+          <input type="date" name="fecha_pago" class="form-control" id="inputFechaVen" placeholder="Fecha de Vencimiento">
+          <label for="floatingInput">Fecha de Vencimiento</label>
+        </div>
+        <div  class="form-floating">
+    <select class="form-select" name="servicio" aria-label="Selecione un servicio">
+    </select>
+          
+        </div>
+        <div class="form-floating">
+          <input type="number" name="monto" class="form-control" id="inputMonto" placeholder="Monto">
+          <label for="floatingPassword">Monto</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Agregar
+        </button>
+      </form>
+    </main>
+    <script src="static/js/agregarPago.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.all.min.js"></script>
+  </body>
+
+
+</body>
+
+</html>
