@@ -48,8 +48,7 @@ form.onsubmit = async function (event){
     
                     }
                 }) 
-            }
-            else{
+            }else{
                 Swal.fire({
                     icon:"error",
                     title: 'Oops...',
