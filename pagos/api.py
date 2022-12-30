@@ -35,6 +35,6 @@ class ExpiredPaymentsViewSet(viewsets.ModelViewSet):
 class ServicesViewSet(viewsets.ModelViewSet):
     queryset = Services.objects.get_queryset().order_by('id')
     serializer_class = ServicesSerializer
-    http_method_names = ['get']
+    # http_method_names = ['get']
     # permission_classes =[permissions.IsAuthenticated]
     throttle_scope = 'services'
