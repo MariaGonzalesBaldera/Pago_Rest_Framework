@@ -27,7 +27,7 @@ form.onsubmit = async function(event){
     if (data.message=="Logeado correctamente"){
         const newToken =[...token,data]
         localStorage.setItem("jwt.token",JSON.stringify(newToken))
-        location.href ="/"
+        location.href ="index.html"
     }else{
         Swal.fire({
             icon:"error",

@@ -44,7 +44,7 @@ form.onsubmit = async function (event){
                     'success'
                   ).then((result) => {
                     if (result.isConfirmed) {
-                        location.href ="/"    
+                        location.href ="index.html"    
     
                     }
                 }) 

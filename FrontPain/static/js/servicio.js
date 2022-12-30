@@ -78,7 +78,7 @@ let formValidation = () => {
                     'success'
                   ).then((result) => {
                     if (result.isConfirmed) {
-                        location.href ="/"    
+                        location.href ="index.html"    
     
                     }
                 }) 
@@ -116,7 +116,7 @@ let formValidation = () => {
                 'success'
               ).then((result) => {
                 if (result.isConfirmed) {
-                    location.href ="/"    
+                    location.href ="index.html"    
 
                 }
             }) 
